@@ -1,0 +1,18 @@
+[Unit]
+Description=dnsmasq - A lightweight DHCP and caching DNS server
+Requires=network.target
+Wants=nss-lookup.target
+Before=nss-lookup.target
+After=dnsmasq.service
+
+[Service]
+ExecStart=/usr/bin/python /usr/local/bin/fakedns.py
+WorkingDirectory=/usr/local/bin
+Restart=always
+StandardOutput=/var/log/fakedns
+StandardError=/var/log/fakedns
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
