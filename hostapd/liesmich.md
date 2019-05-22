@@ -1,2 +1,2 @@
 # hostapd 
-## Konfiguration für das Drahtlos Netzwerk Einstieg
+## Konfiguration für den Eintrittspunkt des Drahtlos Netzwerks 
