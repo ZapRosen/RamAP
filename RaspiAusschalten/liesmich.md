@@ -14,3 +14,4 @@ Verbinde die Gpio Pins 5 und 6 des Raspberry Danach fährt der
 Raspberry herunter oder startet neu. Wenn der Knopf länger als 
 3 Sekunden gedrückt wird fährt er herunter, Wenn kürzer als 3 Sekunden 
 gedrückt wird, bootet der Raspi neu.
+(eine genauere Beschreibung folgt)
