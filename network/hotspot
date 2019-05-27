@@ -1,4 +1,5 @@
-# Raspi als Hotspot
+# Raspi als Hotspot Die IP-Adresse sollte außerhalb des Routerbereichs liegen
+# Wenn die IP-Adresse geändert werden soll, muss sie kongruent in der Datei ... geändert werden.
 
 allow-hotplug wlan0
 iface wlan0 inet static
