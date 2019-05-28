@@ -1,4 +1,15 @@
 #!/usr/bin/python
+# fakedns.py
+# 
+# Original script by Francisco Santos from
+# https://code.activestate.com/recipes/491264-mini-fake-dns-server/
+#
+# Modified by Joe Ryan to support the optional ~/.fakedns configuration file. With this version,
+# if you run fakedns.py without the configuration file, the tool will generate a sample file and
+# save it as .fakedns.sample. Look at that file to replicate the syntax, which will allow you
+# to define responses for specific domains that overwride the default response.
+#
+# Für das Matee-Poster von mir angepasst.
 
 import socket
 
