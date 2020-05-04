@@ -91,11 +91,11 @@ Damit Pi-Shutdown künftig automatisch geladen wird, kopieren wir einen Systemd-
       sudo cp /pishutdown/* /etc/systemd/system
       sudo systemctl enable pishutdown
 
-# Testen und debuggen Wenn etwas nicht funktioniert
+## Testen und debuggen Wenn etwas nicht funktioniert
 
 Die Installation wurde mit raspbian Stretch durchgeführt Zur Zeit wird getestet unter Buser Demnächst auch eine Bash Installationsroutine.
 
-(demnächst mehr)
+(demnächst mehr in der Datei debug.md
 
 
 
