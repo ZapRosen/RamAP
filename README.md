@@ -1,4 +1,4 @@
-##Matee-Poster: Raspberry Pi mit nginx als mobiler Netzwerk-Zugang mit Webserver.
+## Matee-Poster: Raspberry Pi mit nginx als mobiler Netzwerk-Zugang mit Webserver.
  
 
 Als Betriebssystem des Raspi Zero W ist die Lite-Variante von Raspbian gut geeignet: Sie   verbraucht damit weniger Strom, denn einige Dienste wie etwa das grafische Login werden nicht gestartet. Für die Installation benötigen Sie eine MicroSD-Karte ab 1 GByte.
