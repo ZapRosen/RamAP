@@ -93,7 +93,9 @@ Damit Pi-Shutdown künftig automatisch geladen wird, kopieren wir einen Systemd-
 
 # Testen und debuggen Wenn etwas nicht funktioniert
 
-(demnächst)
+Die Installation wurde mit raspbian Stretch durchgeführt Zur Zeit wird getestet unter Buser Demnächst auch eine Bash Installationsroutine.
+
+(demnächst mehr)
 
 
 
