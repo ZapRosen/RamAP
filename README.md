@@ -1,6 +1,6 @@
 # Matee-Poster: Raspberry Pi  als mobiler Netzwerk-Zugang mit mit nginx Webserver.
  
-Als Betriebssystem für den Raspi verwenden wir Raspian lite Sie   verbraucht  weniger Strom, eine graphische Oberfläche ist nicht vorgesehen. Es wird noch getestet ob diese Version für den Raspi zero verwendet werden kann. 
+Als Betriebssystem für den Raspi verwenden wir Raspian lite.  Es verbraucht  wenig Strom, eine graphische Oberfläche ist nicht vorgesehen. Es wird noch getestet ob diese Version für den Raspi zero verwendet werden kann. 
 Beschrieben wird die Installation unter Linux 
 ## Benötigt wird:
 
