@@ -1,17 +1,16 @@
-## Matee-Poster: Raspberry Pi mit nginx als mobiler Netzwerk-Zugang mit Webserver.
+# Matee-Poster: Raspberry Pi mit nginx als mobiler Netzwerk-Zugang mit Webserver.
  
-
 Als Betriebssystem des Raspi Zero W ist die Lite-Variante von Raspbian gut geeignet: Sie   verbraucht  weniger Strom, eine graphische Oberfläche wirdnicht gestartet. Es wird noch getestet ob diese Version für den Raspi zero verwendet werden kann. 
 Beschrieben wird die Installation unter Linux 
-# Benötigt wird:
+## Benötigt wird:
 
       ein Raspberry pi, mit SD Karte, 
 
-# Vorkenntnisse: 
+## Vorkenntnisse: 
 
 Grundkenntnisse in bash, Dateien editieren mit nano, sudo, ls, systemctl, less, cp, 
 
-# Installation
+## Installation
 
 Bitte laden Sie Raspbian Lite direkt von raspberrypi.org herunter und verwenden Sie unter Linux dd if=/home/user/aktuellesraspsian.img of=/dev/sd-- für die Installation  Damit wird sichergestellt, dass die Konfiguration im folgenden funktioniert.
 
