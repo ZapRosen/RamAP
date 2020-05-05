@@ -45,6 +45,12 @@ Damit der Raspi als Funknetz-Server (WLAN Accesspoint) arbeitet, müssen wir Pak
 
       sudo apt-get install hostapd dnsmasq 
 
+Gleich im Anschluss daran schalten wir die Programme aus.
+
+      sudo systemctl stop dnsmasq   
+      sudo systemctl stop hostapd
+
+
 Die Konfigurationsdateien beider Programme müssen nach /etc kopiert werden:
 
 
