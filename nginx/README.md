@@ -1,11 +1,7 @@
-## nginx als Reverse-Proxy
-# Motivation
+## nginx  
+ 
 Um den Matee-Poster zu erreichen muss man seine IP-Nummer in die Browserzeile eingeben.
-Einfacher wäre es, wenn man nach dem Einloggen einen Namen eingeben könnte. Dies wird
-erreicht, indem der Webserver nginx des Raspberry Pi als Reverse-Proxy konfiguriert wird.
-# Bisherige Konfiguration des nginx
-Bisher wurde der Konfiguration des nginx Webservers keine besondere Aufmerksamkeit
-gewidmet. In der Datei 
+ 
 
       /etc/nginx/sites-available/default 
 
@@ -17,7 +13,7 @@ Damit sollte die  Fehlerseite 404 wieder auf die Startposition geleitet werden. 
 Eintrag ist wichtig für Mobil-Geräte, die bei einer Fehlereingabe sonst hinausgeworfen würden.
 
 # Konfiguration als Reverse-Proxy
-
+Anleitung findet man bei herwig.de 
  Die nginx Hauptkonfigurationsdatei findet man unter /etc/nginx/conf.d/
 In meinen Fall findet man dort den Verweis auf zwei weitere Verzeichnisse: /etc/nginx/conf.d/ und /etc/nginx/sites-enabled/
 In der Datei nginx.conf ist dies bei mir dieser entsprechende Abschnitt:
