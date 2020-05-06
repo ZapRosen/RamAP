@@ -17,6 +17,7 @@ Bevor du weiter installierst stoppe dnsmasq und hostapd!
     sudo systemctl stop dnsmasq  && sudo systemctl stop hostapd
 
 Kopiere die Konfigurationsdateien für hostapd und dnsmasq
+
     sudo cp default/hostapd /etc/default
     sudo cp hostapd/hostapd.conf /etc/hostapd
     sudo cp default/dnsmasq /etc/default
