@@ -1,4 +1,4 @@
-# Matee-Poster: Raspberry Pi  als mobiler Netzwerk-Zugang mit mit nginx Webserver.
+# RamAP Raspberry Pi  als mobiler Access-Point mit mit nginx Webserver.
  
 Als Betriebssystem für den Raspi verwenden wir Raspian lite.  Es verbraucht  wenig Strom, eine graphische Oberfläche ist nicht vorgesehen. Es wird noch getestet ob diese Version für den Raspi zero verwendet werden kann. 
 Beschrieben wird die Installation unter Linux 
@@ -99,7 +99,7 @@ Damit Pi-Shutdown künftig automatisch geladen wird, kopieren wir einen Systemd-
 
 ## Testen und debuggen Wenn etwas nicht funktioniert
 
-Die Installation wurde mit raspbian Stretch durchgeführt Zur Zeit wird getestet unter Buser Demnächst auch eine Bash Installationsroutine.
+Die Installation wurde mit raspbian Stretch durchgeführt Zur Zeit wird getestet unter Buser Angedacht ist  auch eine Bash Installationsroutine.
 
 (demnächst mehr in der Datei debug.md
 
