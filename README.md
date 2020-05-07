@@ -1,4 +1,4 @@
-# RamAP Raspberry Pi  als mobiler Access-Point mit mit nginx Webserver.
+# RamAP Raspberry Pi  als mobiler Access-Point mit nginx Webserver.
  
 Als Betriebssystem für den Raspi verwenden wir Raspian lite.  Es verbraucht  wenig Strom, eine graphische Oberfläche ist nicht vorgesehen. Es wird noch getestet ob diese Version für den Raspi zero verwendet werden kann. 
 Beschrieben wird die Installation unter Linux 
