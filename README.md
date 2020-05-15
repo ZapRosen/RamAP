@@ -1,6 +1,6 @@
 # Gewebe Raspberry Pi  als mobiler Access-Point mit nginx Webserver.
 
-##Warum Gewebe?
+## Warum Gewebe?
 
 Irgendeinen Namen sollte das Bastelprojekt haben. RamAP: Raspberry mobiler Access Point hieß es mal oder Matee-Poster. Alle Namen sind mir noch nicht zufriedenstellend. Gewebe steht hier für ein Netzwerk. Ein Gewebe vom Raspberry-Pi der die Nutzer zu einem Gewebe vereinigt. ? Mir fällt nichts anderes ein.
 
