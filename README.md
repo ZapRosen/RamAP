@@ -103,9 +103,15 @@ Damit Pi-Shutdown künftig automatisch geladen wird, kopieren wir einen Systemd-
 
 ## Testen und debuggen Wenn etwas nicht funktioniert
 
-Die Installation wurde mit raspbian Stretch durchgeführt Zur Zeit wird getestet unter Buser Angedacht ist  auch eine Bash Installationsroutine.
+Die Installation wurde mit raspbian Buster durchgeführt. Wenn etwas nicht funktioniert, liegt es meistens am Programm 'hostapd' oder daran, dass sich in einer Datei ein Tippfehler befindet. Nach der Installation sollte man hostapd sofort stoppen mit 
 
-(demnächst mehr in der Datei debug.md
+      sudo systemctl stop hostap
+  
+Danach kann man das Programm neu laden und starten.
+
+      sudo systemctl enable hostapd.service
+      sudo systemctl restart hostapd.service
+
 
 
 
