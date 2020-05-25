@@ -4,7 +4,8 @@
 Shutdown/reboot(/power on) Raspberry Pi with pushbutton
 
 ## Usage:
-Connect pushbutton to GPIO pin 5 and ground then run:
+Schließ an GPIO pin 5 and ground (GND) einen Tastschalter an. Wenn du den Taster kürzer als 3
+Sekunden drückst, erfolgt ein reboot. Wenn du zwischen drei und fünf Sekunden drückst fährt Raspbian herunter.
 
 sudo python pishutdown.py
 
