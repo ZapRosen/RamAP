@@ -2,11 +2,11 @@
 
 ## Warum Gewebe?
 
-Irgendeinen Namen sollte das Bastelprojekt haben. RamAP: Raspberry mobiler Access Point hieß es mal oder Matee-Poster. Alle Namen sind mir noch nicht zufriedenstellend. Gewebe steht hier für ein Netzwerk. Ein Gewebe vom Raspberry-Pi der die Nutzer zu einem Gewebe vereinigt. ? Mir fällt nichts anderes ein. Dieses Bastelprojekt ist gecovert vom c't Flugblatt. Mein Dank geht an den Autor des Artikels. Die Intention dieses Bastelprojekts sind jedoch anderer Art. Im Grunde ist dieses ein Captive Portal, dass nach dem man-in-the-middle Prinzip funktioniert. Eine Kurzanleitung zur Installation findest Du in der Datei Scratch-Schummelzettel.md
+Irgendeinen Namen sollte das Bastelprojekt haben. RamAP: Raspberry mobiler Access Point hieß es mal oder Matee-Poster. Alle Namen sind mir noch nicht zufriedenstellend. Gewebe steht hier für ein Netzwerk. Ein Gewebe vom Raspberry-Pi der die Nutzer zu einem Gewebe vereinigt. ? Mir fällt nichts anderes ein. Dieses Bastelprojekt ist gecovert vom c't Flugblatt. Mein Dank geht an den Autor des Artikels. Die Intention dieses Bastelprojekts sind jedoch anderer Art. Im Grunde ist dieses ein Captive Portal,  Eine Kurzanleitung zur Installation findest Du in der Datei Scratch-Schummelzettel.md
 
 Als Betriebssystem für den Raspi verwenden wir Raspian lite.  Es verbraucht  wenig Strom, eine graphische Oberfläche ist nicht vorgesehen. Es wird noch getestet ob diese Version für den Raspi zero verwendet werden kann. 
 Beschrieben wird die Installation unter Linux 
-## Benötigt wird:
+ ### Benötigt wird:
 
       ein Raspberry pi, mit SD Karte, 
 
@@ -112,6 +112,15 @@ Danach kann man das Programm neu laden und starten.
       sudo systemctl enable hostapd.service
       sudo systemctl restart hostapd.service
 
+
+## Fazit
+Es gibt zahlreiche Möglichkeiten, das Gewebe weiterzuentwickeln. Man könnte in 'interfaces' noch eine bridge und einen eth Zugang legen. An einen Router angeschlossen könnte Gewebe als Gäste-Netzwerk dienen. Dieses Projekt ist unter Bildungsaspekten und für Bildungszwecke gedacht. Man könnte darauf moodle installieren und den Raspi als lokales Bildungsprojekt benutzen.
+
+Es ist auf keinen Fall für industrielle oder öffentliche Aufgaben gedacht. Obwohl dieses auch möglich wäre. Es wird keine Gewähr übernommen für Schäden. 
+
+Die Rechte der hier verwendeten Programme, Dateien und Installationen liegen bei den entsprchenden Besitzern. Mein Dank geht an Daniel Cooper für den Artikel "In die Freiheit entlassen" https://www.heise.de/select/ct/2017/22/1508780300482172 
+Der Artikel hat mit zahlreiche Stunden an lustvoller Frickelarbeit beschert. Bei der Fehlersuche habe ich viel über Linux im allgemeinen und hostapd im besonderen gelernt.
+ 
 
 
 
