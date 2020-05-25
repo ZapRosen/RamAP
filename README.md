@@ -2,7 +2,7 @@
 
 ## Warum Gewebe?
 
-Irgendeinen Namen sollte das Bastelprojekt haben. RamAP: Raspberry mobiler Access Point hieß es mal oder Matee-Poster. Alle Namen sind mir noch nicht zufriedenstellend. Gewebe steht hier für ein Netzwerk. Ein Gewebe vom Raspberry-Pi der die Nutzer zu einem Gewebe vereinigt. ? Mir fällt nichts anderes ein.
+Irgendeinen Namen sollte das Bastelprojekt haben. RamAP: Raspberry mobiler Access Point hieß es mal oder Matee-Poster. Alle Namen sind mir noch nicht zufriedenstellend. Gewebe steht hier für ein Netzwerk. Ein Gewebe vom Raspberry-Pi der die Nutzer zu einem Gewebe vereinigt. ? Mir fällt nichts anderes ein. Dieses Bastelprojekt ist gecovert vom c't Flugblatt. Mein Dank geht an den Autor des Artikels. Die Intention dieses Bastelprojekts sind jedoch anderer Art. Im Grunde ist dieses ein Captive Portal, dass nach dem man-in-the-middle Prinzip funktioniert. Eine Kurzanleitung zur Installation findest Du in der Datei Scratch-Schummelzettel.md
 
 Als Betriebssystem für den Raspi verwenden wir Raspian lite.  Es verbraucht  wenig Strom, eine graphische Oberfläche ist nicht vorgesehen. Es wird noch getestet ob diese Version für den Raspi zero verwendet werden kann. 
 Beschrieben wird die Installation unter Linux 
