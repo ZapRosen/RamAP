@@ -2,24 +2,35 @@
 
 ## Warum Gewebe?
 
-Irgendeinen Namen sollte das Bastelprojekt haben. RamAP: Raspberry mobiler Access Point hieß es mal oder Matee-Poster. Alle Namen sind mir noch nicht zufriedenstellend. Gewebe steht hier für ein Netzwerk. Ein Gewebe vom Raspberry-Pi der die Nutzer zu einem Gewebe vereinigt. ? Mir fällt nichts anderes ein. Dieses Bastelprojekt ist gecovert vom c't Flugblatt. Mein Dank geht an den Autor des Artikels. Die Intention dieses Bastelprojekts sind jedoch anderer Art. Im Grunde ist dieses ein Captive Portal,  Eine Kurzanleitung zur Installation findest Du in der Datei Scratch-Schummelzettel.md
+Irgendeinen Namen sollte das Bastelprojekt haben. RamAP: Raspberry mobiler Access Point hieß es mal oder Matee-Poster. Alle Namen sind mir noch nicht zufriedenstellend. Gewebe steht hier für ein Netzwerk. Ein Gewebe vom Raspberry-Pi der die Nutzer zu einem Gewebe vereinigt. ? Mir fällt nichts anderes ein. Dieses Bastelprojekt ist gecovert vom c't Flugblatt. Mein Dank geht an den Autor des Artikels. Die Intention dieses Bastelprojekts ist jedoch anderer Art und keinesfalls subversiv motiviert. Im Grunde ist dieses ein Captive Portal, das die Nutzergeräte einfängt und mit Information versorgt. 
+
+
+### Eine Kurzanleitung 
+
+Eine kurze Anleitung zur  Installation findest Du in der Datei Scratch-Schummelzettel.md . Kopiere und paste die entsprchenden bash Befehle oder Einträge in Konfigurationsdateien. Ein Installationsskript ist derzeit nicht geplant. 
+
+### Raspbian lite
 
 Als Betriebssystem für den Raspi verwenden wir Raspian lite.  Es verbraucht  wenig Strom, eine graphische Oberfläche ist nicht vorgesehen. Es wird noch getestet ob diese Version für den Raspi zero verwendet werden kann. 
 Beschrieben wird die Installation unter Linux 
- ### Benötigt wird:
 
-      ein Raspberry pi, mit SD Karte, 
+### Benötigt wird:
 
-## Vorkenntnisse: 
+      ein Raspberry pi, mit SD Karte, Jumperkabel Tastschalter, Stromversorgung durch ein Netzteil 
 
-Grundkenntnisse in bash, Dateien editieren mit nano, sudo, ls, systemctl, less, cp, lsblk, rfkill, 
-Nützlich sind Grundkenntnisse in pyhton 3
+### Vorkenntnisse: 
 
+Grundkenntnisse in: 
+  
+ * Dateien editieren mit nano, 
+ * bash-Befehle: sudo, ls, systemctl, less, cp, lsblk, rfkill
+  
 ## Installation
 
 Raspbian Lite direkt von raspberrypi.org herunterladen  und  unter Linux mit dd if=/home/user/aktuellesraspsian.img of=/dev/sd-- auf die SD-Karte übertragen. Mit lsblk wird geprüft welche Laufwerksbezeichnungen vorhanden sind. Diese müssen bei der Installation berücksichtigt werden.
 
- Unter windows kopieren Sie das Image mit dem Programm W32DiskImager Byte für Byte auf die Speicherkarte.  macOS-User benutzen dafür ebenfalls das Kommandozeilenprogramm dd.
+Unter windows kopierst du das Image mit dem Programm W32DiskImager Byte für Byte auf die Speicherkarte.  macOS-User benutzen dafür wie die Linuxer das Kommandozeilenprogramm dd. Das Programm 'etcher' eignet sich ebenfalls zum Brennen der SD-Karte.
+https://www.balena.io/etcher/ 
 
  Die Einrichtung erfolgt  entweder per SSH. oder wenn die Installation auf einem Raspi 3 oder höher möglich ist direkt über Tastatur und Maus am Bildschirm. Die Vorgehensweise wird  hier  Zunächst entfernen Sie die SD-Karte aus dem Kartenleser und stecken sie nach ein paar Sekunden wieder hinein. So erzwingen Sie, dass sowohl Linux oder Windows die Partitionstabelle neu einliest –  Im folgenden wird die Installation für Linux beschrieben. User anderer Systeme müssen acht geben, dass sie nicht die Fallstricke ihrer Systeme geraten. 
 
