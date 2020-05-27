@@ -2,8 +2,9 @@
 
 ## Warum Gewebe?
 
-Irgendeinen Namen sollte das Bastelprojekt haben. RamAP: Raspberry mobiler Access Point hieß es mal oder Matee-Poster. Alle Namen sind mir noch nicht zufriedenstellend. Gewebe steht hier für ein Netzwerk. Ein Gewebe vom Raspberry-Pi der die Nutzer zu einem Gewebe vereinigt. ? Mir fällt nichts anderes ein. Dieses Bastelprojekt ist gecovert vom c't Flugblatt. Mein Dank geht an den Autor des Artikels. Die Intention dieses Bastelprojekts ist jedoch anderer Art und keinesfalls subversiv motiviert. Im Grunde ist dieses ein Captive Portal, das die Nutzergeräte einfängt und mit Information versorgt. 
+Irgendeinen Namen sollte das Bastelprojekt haben. RamAP: Raspberry mobiler Access Point hieß es mal oder Matee-Poster. Alle Namen sind mir noch nicht zufriedenstellend. Gewebe steht hier für ein Netzwerk. Ein Gewebe vom Raspberry-Pi der die Nutzer zu einem Gewebe vereinigt. (?) Gewebe steht hier für Netzwerk. Dieses Bastelprojekt wurde gecovert vom c't Flugblatt. Mein Dank geht an den Autor des Artikels in der c't von 2017 https://www.heise.de/select/ct/2017/22/1508780300482172 
 
+Die Intention dieses Bastelprojekts ist jedoch anderer Art und keinesfalls subversiv motiviert. Im Grunde ist dieses ein Captive Portal, das die Nutzergeräte einfängt und mit Information versorgt. 
 
 ### Eine Kurzanleitung 
 
@@ -11,7 +12,7 @@ Eine kurze Anleitung zur  Installation findest Du in der Datei Scratch-Schummelz
 
 ### Raspbian lite
 
-Als Betriebssystem für den Raspi verwenden wir Raspian lite.  Es verbraucht  wenig Strom, eine graphische Oberfläche ist nicht vorgesehen. Es wird noch getestet ob diese Version für den Raspi zero verwendet werden kann. 
+Als Betriebssystem für den Raspberry-pi verwenden wir Raspian lite.  Es verbraucht nur wenig Strom. Eine graphische Oberfläche ist nicht vorgesehen. Ensprechend sind die Einstellungen nach dem ersten booten mit sudo raspi-config vorzunehmen. Es wird noch getestet ob diese Version für den Raspi zero verwendet werden kann. 
 Beschrieben wird die Installation unter Linux 
 
 ### Benötigt wird:
@@ -24,6 +25,7 @@ Grundkenntnisse in:
   
  * Dateien editieren mit nano, 
  * bash-Befehle: sudo, ls, systemctl, less, cp, lsblk, rfkill
+ * Einrichtung und Inbetruebnahme des Raspberry-pi
   
 ## Installation
 
