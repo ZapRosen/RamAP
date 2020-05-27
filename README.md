@@ -25,7 +25,7 @@ Grundkenntnisse in:
   
  * Dateien editieren mit nano, 
  * bash-Befehle: sudo, ls, systemctl, less, cp, lsblk, rfkill
- * Einrichtung und Inbetruebnahme des Raspberry-pi
+ * Einrichtung und Inbetriebnahme des Raspberry-pi
   
 ## Installation
 
