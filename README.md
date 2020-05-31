@@ -133,7 +133,7 @@ Es gibt zahlreiche Möglichkeiten, das Gewebe weiterzuentwickeln. Man könnte in
 Es ist auf keinen Fall für industrielle oder öffentliche Aufgaben gedacht. Obwohl dieses auch möglich wäre. Es wird keine Gewähr übernommen für Schäden. 
 
 Die Rechte der hier verwendeten Programme, Dateien und Installationen liegen bei den entsprchenden Besitzern. Mein Dank geht an Daniel Cooper für den Artikel "In die Freiheit entlassen" https://www.heise.de/select/ct/2017/22/1508780300482172 
-Der Artikel hat mit zahlreiche Stunden an lustvoller Frickelarbeit beschert. Bei der Fehlersuche habe ich viel über Linux im allgemeinen und hostapd im besonderen gelernt.
+Der Artikel hat mir zahlreiche Stunden an lustvoller Frickelarbeit ^^ beschert. Bei der Fehlersuche habe ich viel über Linux im allgemeinen und hostapd im besonderen gelernt.
  
 
 
