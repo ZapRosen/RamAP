@@ -9,6 +9,7 @@ Die Intention dieses Bastelprojekts ist jedoch anderer Art und keinesfalls subve
 ### Eine Kurzanleitung 
 
 Eine kurze Anleitung zur  Installation findest Du in der Datei Scratch-Schummelzettel.md . Kopiere und paste die entsprchenden bash Befehle oder Einträge in Konfigurationsdateien. Ein Installationsskript ist derzeit nicht geplant. 
+Das Radio-Modul ist nach dem ersten booten ausgeschaltet. Nach der installation muss es mit rfkill entsperrt werden und der hostapd muss neu geladen und gestartet werden. Sonst läuft es nicht.
 
 ### Raspbian lite
 
