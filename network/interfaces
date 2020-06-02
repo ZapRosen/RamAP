@@ -5,9 +5,9 @@
 
 # Include files from /etc/network/interfaces.d:
 source-directory /etc/network/interfaces.d
-
-# Raspi als Hotspot Gewebe
-#Versuch eth0 zu aktivieren
+# 
+# Raspi als AP-Portal Gewebe
+# eth0  aktivieren
 allow-hotplug eth0
 iface eth0 inet dhcp
 ###########################
@@ -19,7 +19,7 @@ iface wlan0 inet static
 	wireless-mode Master
 	wireless-power off
 #
-##### alte Einstellung ##########
+##### alte Einstellung ohne eth0 Zugang ##########
 #auto wlan0
 #iface wlan0 inet static
 #	address 192.168.255.1
