@@ -26,6 +26,7 @@ In der Datei nginx.conf ist dies bei mir dieser entsprechende Abschnitt:
 
 
 Nachdem der Webserver neu gestartet wurde, werden die client-Geräte automatisch auf die Seite des Gewebe-Servers umgeleitet. 
+Die Eingabe der IP-Nummer ist danach nicht mehr notwendig.
 
 
 (Sonstiges)
