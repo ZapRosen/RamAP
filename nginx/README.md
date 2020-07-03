@@ -1,6 +1,6 @@
 ## nginx  
  
-Um den Matee-Poster zu erreichen muss man seine IP-Nummer in die Browserzeile eingeben.
+Um den Webserver 'Gewebe' zu erreichen muss man seine IP-Nummer in die Browserzeile eingeben.
  
 
       /etc/nginx/sites-available/default 
@@ -23,6 +23,12 @@ In der Datei nginx.conf ist dies bei mir dieser entsprechende Abschnitt:
         
         include /etc/nginx/conf.d/*.conf;
         include /etc/nginx/sites-enabled/*;
+
+
+Nachdem der Webserver neu gestartet wurde, werden die client-Geräte automatisch auf die Seite des Gewebe-Servers umgeleitet. 
+
+
+(Sonstiges)
 Im Verzeichnis /etc/nginx/conf.d/ werden alle Dateien mit der Endung .conf mit eingelesen. Dies wurde durch das /*.conf; am Ende der include Anweisung festgelegt. Soll eine dort liegende Konfigurationsdatei nicht ausgeführt werden, so muss die Dateiendung geändert werden, z.B. auf .disabled.
 Im Verzeichnis /etc/nginx/sites-enabled/ werden alle dort liegenden Dateien berücksichtigt, festgelegt durch das /*; am Ende der entsprechenden includeAnweisung. Soll eine Datei dort nicht ausgeführt werden, muss diese aus dem Verzeichnis entfernt werden, z.B. durch verschieben in den Ordner /etc/nginx/sites-available.
 #
