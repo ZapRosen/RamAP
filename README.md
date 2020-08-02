@@ -2,23 +2,23 @@
 
 ## Warum Gewebe?
 
-Irgendeinen Namen sollte das Bastelprojekt haben. RamAP: Raspberry mobiler Access Point hieß es mal oder Matee-Poster. Alle Namen sind mir noch nicht zufriedenstellend. Gewebe steht hier für ein Netzwerk. Ein Gewebe vom Raspberry-Pi der die Nutzer zu einem Gewebe vereinigt. (?)   Dieses Bastelprojekt wurde gecovert vom c't Flugblatt. Mein Dank geht an den Autor des Artikels in der c't von 2017 https://www.heise.de/select/ct/2017/22/1508780300482172 
+Irgendeinen Namen sollte das Bastelprojekt haben. RamAP: Raspberry mobiler Access-Point hieß es mal oder Matee-Poster. Alle Namen sind mir noch nicht zufriedenstellend. Gewebe steht hier für ein Netzwerk. Ein Gewebe vom Raspberry-Pi der die Nutzer zu einem Gewebe vereinigt. (?)   Dieses Bastelprojekt wurde gecovert vom c't Flugblatt. Mein Dank geht an den Autor des Artikels in der c't von 2017 https://www.heise.de/select/ct/2017/22/1508780300482172 
 
-Die Intention dieses Bastelprojekts ist jedoch anderer Art und keinesfalls subversiv motiviert. Im Grunde ist dieses ein Captive Portal, das die Nutzergeräte einfängt und mit Information versorgt. 
+Die Intention dieses Bastelprojekts ist jedoch anderer Art und keinesfalls subversiv motiviert. Im Grunde ist dieses ein Captive-Portal, das die Nutzergeräte einfängt und mit Information versorgt. 
 
 ### Eine Kurzanleitung 
 
-Eine kurze Anleitung zur  Installation findest Du in der Datei Scratch-Schummelzettel.md . Kopiere und paste die entsprchenden bash Befehle oder Einträge in Konfigurationsdateien. Ein Installationsskript ist derzeit nicht geplant. 
-Das Radio-Modul ist nach dem ersten booten ausgeschaltet. Nach der installation muss es mit rfkill entsperrt werden und der hostapd muss neu geladen und gestartet werden. Sonst läuft es nicht.
+Eine kurze Anleitung zur  Installation findest Du in der Datei Scratch-Schummelzettel.md . Kopiere und postiere die entsprechenden bash-Befehle oder Einträge in Konfigurationsdateien. Ein Installationsskript ist derzeit nicht geplant. 
+Das Radio-Modul ist nach dem ersten booten ausgeschaltet. Nach der Installation muss es mit rfkill entsperrt werden und der hostapd muss neu geladen und gestartet werden. Sonst läuft es nicht.
 
 ### Raspbian lite
 
-Als Betriebssystem für den Raspberry-pi verwenden wir Raspian lite.  Es verbraucht nur wenig Strom. Eine graphische Oberfläche ist nicht vorgesehen. Ensprechend sind die Einstellungen nach dem ersten booten mit sudo raspi-config vorzunehmen. Es wird noch getestet ob diese Version für den Raspi zero verwendet werden kann. 
+Als Betriebssystem für den Raspberry-pi verwenden wir Raspian lite.  Es verbraucht nur wenig Strom. Eine graphische Oberfläche ist nicht vorgesehen. Entsprechend sind die Einstellungen nach dem ersten booten mit sudo raspi-config vorzunehmen. Es wird noch getestet ob diese Version für den Raspi zero verwendet werden kann. 
 Beschrieben wird die Installation unter Linux 
 
 ### Benötigt wird:
 
-      ein Raspberry pi, mit SD Karte, Jumperkabel Tastschalter, Stromversorgung durch ein Netzteil 
+      ein Raspberry pi, mit SD-Karte, Jumperkabel Tastschalter, Stromversorgung durch ein Netzteil 
 
 ### Vorkenntnisse: 
 
@@ -58,7 +58,7 @@ Als nächstes installieren wir den Webserver nginx
             sudo apt-get install nginx
  
 
-Damit der Raspi als Funknetz-Server (WLAN Accesspoint) arbeitet, müssen wir Pakete nachinstallieren:
+Damit der Raspi als Funknetz-Server (WLAN-Accesspoint) arbeitet, müssen wir Pakete nachinstallieren:
 
 
       sudo apt-get install hostapd dnsmasq 
@@ -77,7 +77,7 @@ Die Konfigurationsdateien beider Programme müssen nach /etc kopiert werden:
       sudo cp /dnsmasq.conf /etc
 
 Jetzt benötigen wir noch einen mit statischer IP-Adresse konfigurierten WLAN-Adapter, 
-Dazu öffnen wir erneut die Datei interfaces in /etc/network/interfaces  und fügen dort folgendes ein, soforn es nicht schon dort vorhanen ist:
+Dazu öffnen wir erneut die Datei interfaces in /etc/network/interfaces  und fügen dort folgendes ein, sofern es nicht schon dort vorhanden ist:
 
       auto wlan0
       iface wlan0 inet static
@@ -119,7 +119,7 @@ Damit Pi-Shutdown künftig automatisch geladen wird, kopieren wir einen Systemd-
 
 Die Installation wurde mit raspbian Buster durchgeführt. Wenn etwas nicht funktioniert, liegt es meistens am Programm 'hostapd' oder daran, dass sich in einer Datei ein Tippfehler befindet. Nach der Installation sollte man hostapd sofort stoppen mit 
 
-      sudo systemctl stop hostap
+      sudo systemctl stop hostapd
   
 Danach kann man das Programm neu laden und starten.
 
