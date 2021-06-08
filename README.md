@@ -86,6 +86,8 @@ Dazu öffnen wir erneut die Datei interfaces in /etc/network/interfaces  und fü
           wireless-mode Master
           wireless-power off
 
+Solltest Du bis dahin den raspi über ethernet und den Router eingerichtet haben, denk daran, dass nach einem Neustart des raspberrys dieser nicht mehr über das Drahtnetzwerk erreichbar ist. Möchtest Du den raspi weiterhin über LAN administrieren, sind weitere Einträge notwendig.
+
 Dann kopieren wir den FakeDNS-Daemon in das Verzeichnis /usr/local/bin und sorgen dafür, dass er mit systemctl beim nächsten Startvorgang automatisch startet.
 
       sudo cp fakedns/*.py /usr/local/bin
