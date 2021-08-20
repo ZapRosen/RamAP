@@ -1,0 +1,94 @@
+#nach dem Einloggen Raspbian ist fertig konfiguriert, Sicherheiteinstellungen sind ok
+# 1. Energiesparmodus ausschalten und Raspi updaten
+sudo iw wlan0 set power_save off
+sudo apt-get update && sudo apt-get upgrade -y
+
+########################
+Sicherheitseinstellungen
+########################
+sudo useradd -m ric -G sudo
+sudo passwd ric
+
+sudo passwd --lock pi
+
+sudo passwd root
+
+sudo nano  /etc/ssh/sshd_config
+
+            PermitRootLogin no
+
+sudo /etc/init.d/ssh restart
+----------------------------------
+
+#Installiere hostapd
+
+sudo apt-get install hostapd
+sudo cp hostapd /etc/hostapd 
+sudo cp hostapd.conf  /etc/hostapd
+
+sudo apt-get install dnsmasq -y
+sudo cp dnsmasq /etc/default/
+sudo cp dnsmasq.conf  /etc
+
+sudo cp interfaces /etc/network/interfaces
+
+sudo apt-get install nginx -y
+
+#error code wird umgeleitet
+
+sudo cp nginx/default /etc/nginx/sites-available
+
+#fakedns installieren
+sudo cp fakedns.py /usr/local/bin/
+sudo cp fakedns.service  /etc/systemd/system 
+
+sudo systemctl enable fakedns.service 
+
+#pishutdown
+
+sudo cp pishutdown.py  /usr/local/bin/
+sudo cp pishutdown.service /etc/systemd/system
+sudo systemctl enable pishutdown.service 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
