@@ -119,7 +119,7 @@ Damit Pi-Shutdown künftig automatisch geladen wird, kopieren wir einen Systemd-
 
 ## Testen und debuggen Wenn etwas nicht funktioniert
 
-Die Installation wurde mit raspbian Buster durchgeführt. Wenn etwas nicht funktioniert, liegt es meistens am Programm 'hostapd' oder daran, dass sich in einer Datei ein Tippfehler befindet. Nach der Installation sollte man hostapd sofort stoppen mit 
+Die Installation wurde mit raspbian Buster durchgeführt. Wenn etwas nicht funktioniert, sollte man nachsehen ob das Radio-Modul eingeschaltet und hostapd läuft. Meistens  liegt es  am Programm 'hostapd' oder daran, dass sich beim Editieren  einer Datei ein Tippfehler eingeschlichen hat. Nach der Installation sollte man hostapd  stoppen. 
 
       sudo systemctl stop hostapd
   
