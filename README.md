@@ -2,7 +2,7 @@
 
 ## Warum Gewebe?
 
-Irgendeinen Namen sollte das Bastelprojekt haben. RamAP: Raspberry mobiler Access-Point hieß es mal oder Matee-Poster. Ramap heißt es jetzt und dabei bleibt es, auch wenn es an Margarine erinnert. Es hieß mal Gewebe und das stand für ein Netzwerk. Ein Gewebe vom Raspberry-Pi der die Nutzer zu einem Gewebe vereinigt. (?)   Dieses Bastelprojekt wurde gecovert vom c't Flugblatt. Mein Dank geht an den Autor des Artikels in der c't von 2017 https://www.heise.de/select/ct/2017/22/1508780300482172 
+Irgendeinen Namen sollte das Bastelprojekt haben. RamAP: Raspberry mobiler Access-Point hieß es mal oder Matee-Poster. media2X (Mediatux) heißt es jetzt und dabei bleibt es, auch wenn es an ein Kaufhaus erinnert. Es hieß mal Gewebe und das stand für ein Netzwerk. Ein Gewebe vom Raspberry-Pi der die Nutzer zu einem Gewebe vereinigt. (?)   Dieses Bastelprojekt wurde gecovert vom c't Flugblatt. Mein Dank geht an den Autor des Artikels in der c't von 2017 https://www.heise.de/select/ct/2017/22/1508780300482172 
 
 Die Intention dieses Bastelprojekts ist jedoch anderer Art und keinesfalls subversiv motiviert. Im Grunde ist dieses ein Captive-Portal, das die Nutzergeräte einfängt und mit Information versorgt. 
 
