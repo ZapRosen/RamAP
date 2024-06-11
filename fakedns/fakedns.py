@@ -1,16 +1,8 @@
-#!/usr/bin/python
-# fakedns.py
-# 
-# Original script by Francisco Santos from
-# https://code.activestate.com/recipes/491264-mini-fake-dns-server/
-#
-# Modified by Joe Ryan to support the optional ~/.fakedns configuration file. With this version,
-# if you run fakedns.py without the configuration file, the tool will generate a sample file and
-# save it as .fakedns.sample. Look at that file to replicate the syntax, which will allow you
-# to define responses for specific domains that overwride the default response.
-#
-# Für das Matee-Poster von mir angepasst.
-
+#!/usr/bin/python 3
+# Der code könnte von hier stammen:
+#https://code.activestate.com/recipes/491264-mini-fake-dns-server/
+# Der code wurde von mir nach python3 portiert noch nicht getestet.
+# Ein erster Start verlief vielversprechend.
 import socket
 
 class DNSQuery:
@@ -35,12 +27,12 @@ class DNSQuery:
       packet+=self.data[12:]                                         # Original Domain Name Question
       packet+='\xc0\x0c'                                             # Pointer to domain name
       packet+='\x00\x01\x00\x01\x00\x00\x00\x3c\x00\x04'             # Response type, ttl and resource data length -> 4 bytes
-      packet+=str.join('',map(lambda x: chr(int(x)), ip.split('.'))) # 4bytes of IP
+      packet+=str.join('',[chr(int(x)) for x in ip.split('.')]) # 4bytes of IP
     return packet
 
 if __name__ == '__main__':
   ip='192.168.255.1'
-  print 'pyminifakeDNS:: dom.query. 60 IN A %s' % ip
+  print('pyminifakeDNS:: dom.query. 60 IN A %s' % ip)
   
   udps = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
   udps.bind(('',53))
@@ -50,7 +42,7 @@ if __name__ == '__main__':
       data, addr = udps.recvfrom(1024)
       p=DNSQuery(data)
       udps.sendto(p.respuesta(ip), addr)
-      print 'Respuesta: %s -> %s' % (p.dominio, ip)
+      print('Respuesta: %s -> %s' % (p.dominio, ip))
   except KeyboardInterrupt:
-    print 'Finalizando'
+    print('Finalizando')
     udps.close()
