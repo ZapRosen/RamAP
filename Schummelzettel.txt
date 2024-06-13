@@ -6,17 +6,18 @@ sudo apt-get update && sudo apt-get upgrade -y
 ########################
 Sicherheitseinstellungen
 ########################
-sudo useradd -m ric -G sudo
-sudo passwd ric
-
-sudo passwd --lock pi
-
+# Das Anlegen eines neuen users entfällt, da der user pi in raspbian bookworm nicht mehr benutzt wird.
+#sudo useradd -m neueruser -G sudo
+#sudo passwd ric
+##########
+#sudo passwd --lock pi
+# Passwort für root ändern
 sudo passwd root
-
+## Einloggen als root verbieten 
 sudo nano  /etc/ssh/sshd_config
 
             PermitRootLogin no
-
+# Netzwerk neu starten
 sudo /etc/init.d/ssh restart
 ----------------------------------
 
@@ -40,7 +41,9 @@ sudo cp nginx/default /etc/nginx/sites-available
 
 #fakedns installieren
 sudo cp fakedns.py /usr/local/bin/
-sudo cp fakedns.service  /etc/systemd/system 
+#neu ist der fakedns.py von Patryk Hes. Vorläufig muss er noch per Hand gestarte werden mit
+# sudo python3 fakdns.py 
+# sudo cp fakedns.service  /etc/systemd/system 
 
 sudo systemctl enable fakedns.service 
 
