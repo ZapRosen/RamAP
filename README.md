@@ -11,7 +11,7 @@ Dazu wären noch folgende Arbeiten notwendig:
 
 ## Was ist neu an der Version 0.3?
 Spätestens seit dem Erscheinen der Raspberrypi OS Version bookworm ist python 2.7 obsolet und wird nicht mehr mit den offiziellen Quellen installiert. Dadurch kam es zu einer Fehlfunktion von fakedns.py 
-Das Originalskript fand ich
+Das Originalskript fand ich bei activestate ( https://code.activestate.com/recipes/491264-mini-fake-dns-server/ )
 
 
 Irgendeinen Namen sollte das Bastelprojekt haben. RamAP: Raspberry mobiler Access-Point hieß es mal oder Matee-Poster. media2X (Mediatux) heißt es jetzt und dabei bleibt es, auch wenn es an ein Kaufhaus erinnert. Es hieß mal Gewebe und das stand für ein Netzwerk. Ein Gewebe vom Raspberry-Pi der die Nutzer zu einem Gewebe vereinigt. (?)   Dieses Bastelprojekt wurde gecovert vom c't Flugblatt. Mein Dank geht an den Autor des Artikels in der c't von 2017 https://www.heise.de/select/ct/2017/22/1508780300482172 
