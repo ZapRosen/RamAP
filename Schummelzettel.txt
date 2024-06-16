@@ -6,7 +6,7 @@ sudo apt-get update && sudo apt-get upgrade -y
 ########################
 Sicherheitseinstellungen
 ########################
-# Das Anlegen eines neuen users entfällt, da der user pi in raspbian bookworm nicht mehr benutzt wird.
+# Das Anlegen eines neuen users entfällt, da der user pi seit dem Erscheinen vob raspbian bookworm nicht mehr benutzt wird.
 #sudo useradd -m neueruser -G sudo
 #sudo passwd ric
 ##########
@@ -15,7 +15,7 @@ Sicherheitseinstellungen
 sudo passwd root
 ## Einloggen als root verbieten 
 sudo nano  /etc/ssh/sshd_config
-
+eintragen:
             PermitRootLogin no
 # Netzwerk neu starten
 sudo /etc/init.d/ssh restart
