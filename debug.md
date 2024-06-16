@@ -10,7 +10,7 @@ sudo rfkill list wlan
 sudo rfkill unblock wifi
 
 sudo systemctl status hostapd.service
-  - webb hostapd dead oder masked ist:
+  - wenn hostapd dead oder masked ist:
   - sudo systemctl unmask hostapd
   - sudo systemctl enable hostapd
 
