@@ -1,7 +1,7 @@
 #!/usr/bin/python3 env
 # Der code könnte von hier stammen:
 #https://code.activestate.com/recipes/491264-mini-fake-dns-server/
-# aufgebrezelt mit 2to3 Ein erster Test lief 
+# aufgebrezelt mit 2to3 Die Tests liefen vielversprechend 
 import socket
 
 class DNSQuery:
@@ -43,5 +43,5 @@ if __name__ == '__main__':
       udps.sendto(p.respuesta(ip), addr)
       print(('Respuesta: %s -> %s' % (p.dominio, ip)))
   except KeyboardInterrupt:
-    print('Finalizando')
+    print('Beendet')
     udps.close()
