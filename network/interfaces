@@ -6,7 +6,7 @@
 # Hole Dateien von  /etc/network/interfaces.d:
 source-directory /etc/network/interfaces.d
 # 
-# Raspi als AP-Portal 'Gewebe'
+# Raspi als AP-Portal 'media2x'
 # eth0  aktivieren
 allow-hotplug eth0
 iface eth0 inet dhcp
