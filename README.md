@@ -9,6 +9,11 @@ Dazu wären noch folgende Arbeiten notwendig:
 2. ein wetterfestest Gehäuse
 3. ein QR-Code zum Einloggen, damit das Eintippen der IP Nummer entfällt.
 
+## Was ist neu an der Version 0.7
+Der fakedns aka minifakedns-server ist auf python 3 portiert worden und läuft jetzt wieder.
+Ein Install-Skript wurde hinzugefügt. Wechsele in das Verzeichnis media2x und führe das Skript mit root Rechten aus.
+
+
 ## Was ist neu an der Version 0.3?
 Spätestens seit dem Erscheinen der Raspberrypi OS Version bookworm ist python 2.7 obsolet und wird nicht mehr mit den offiziellen Quellen installiert. Dadurch kam es zu einer Fehlfunktion von fakedns.py 
 Das Originalskript fand ich bei activestate ( https://code.activestate.com/recipes/491264-mini-fake-dns-server/ )
