@@ -1,9 +1,10 @@
 ## nginx  
  
-Um den Webserver 'Gewebe' zu erreichen muss man seine IP-Nummer in die Browserzeile eingeben.
+Um den Webserver 'Gewebe' zu erreichen muss man seine IP-Nummer in die Browserzeile eingeben. Die Datei 'default' wird in das Verzeichnis
  
 
-      /etc/nginx/sites-available/default 
+      /etc/nginx/sites-available/
+eingefügt. Darin finden wird einen Eintrag der die 404 Fehler-Seite nach 302 umleitet.      
 
 hatten wir vor 'location' diese Zeile eingefügt:
 
