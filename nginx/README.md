@@ -25,7 +25,7 @@ In der Datei nginx.conf ist dies bei mir dieser entsprechende Abschnitt:
         include /etc/nginx/sites-enabled/*;
 
 
-Nachdem der Webserver neu gestartet wurde, werden die client-Geräte automatisch auf die Seite des Gewebe-Servers umgeleitet. 
+Nachdem der Webserver neu gestartet wurde, werden die client-Geräte automatisch auf die Seite des media2x Servers umgeleitet. 
 Die Eingabe der IP-Nummer ist danach nicht mehr notwendig.
 
 
