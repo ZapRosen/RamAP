@@ -54,6 +54,11 @@ sudo systemctl enable hostapd
 echo " lade hostapd  und starte neu "
 sudo systemctl restart hostapd
 
+echo "***********************************************************************"
+echo "   Starte den Raspberry pi mit sudo reboot    +++++++++++++++++++++++++"
+echo "========================================================================"
+
+
 
 
 
