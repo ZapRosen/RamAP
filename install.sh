@@ -34,11 +34,11 @@ sudo cp -a hostapd /etc
 sudo cp dnsmasq.conf /etc
 
 sudo cp network/interfaces /etc/network/interfaces
-
-sudo cp fakedns/*.py /usr/local/bin
-sudo cp fakedns/*.service /etc/systemd/system
-sudo systemctl enable fakedns.service
-
+## fakedns ist obsolet und wird nicht installiert
+#sudo cp fakedns/*.py /usr/local/bin
+#sudo cp fakedns/*.service /etc/systemd/system
+#sudo systemctl enable fakedns.service
+######################################################
 #
 #hole pi-shutdown
 
