@@ -1,7 +1,7 @@
 # media2x Raspberry Pi  als mobiler Access-Point mit nginx Webserver.
-  Der fakedns server läuft nunmehr mit python3. Die Portierung verlief problemlos mit 2to3 -w  Den fakedns von  Patryk Hes (https://github.com/pathes/fakedns) könnte man ebenfalls als
+  Der fakedns server läuft unter python3 nicht mehr. Die Portierung verlief zwar problemlos mit 2to3 -w aber stüzt immer ab. Den fakedns von  Patryk Hes (https://github.com/pathes/fakedns) könnte man ebenfalls als
   fakedns - server einsetzen. Ich habe mir das Programm zu Lernzwecken geforkt.
-Mein derzeitiges Studieninteresse ist die Programmierung von dns und die Programmierung von Webscrapern mit python.
+Mein derzeitiges Studieninteresse ist die Programmierung von dns und die Programmierung von Webscrapern mit python. Vielleicht starte ich dazu einen blog.
 
 ## Warum media2x?
 weil ich den Raspberry pi so als WLAN Zugangspunkt benutze, um mir Filme anzusehen oder Musik zu hören. Man kann auch Text servieren oder als virtuelle Info-Tafel. Man kann damit eine
